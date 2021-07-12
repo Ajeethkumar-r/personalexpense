@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body
+        {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,7 +21,14 @@
     <button id="btn">+</button>
 
     <script>
-        
+        let counter = 0;
+        function counterIncreament()
+        {
+            counter = counter + 1;
+            console.log(counter);
+        }
+       const element = document.querySelector("btn")
+       element.addEventListener("click",counterIncreament)
     </script>
 </body>
 </html>
