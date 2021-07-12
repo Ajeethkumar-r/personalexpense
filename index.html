@@ -23,8 +23,15 @@
     <button id="btn">+</button>
    
     <script>
+        let totalAmount = 0
+        function addExpensetotal(){
+        const textAmount = document.querySelector("ipbox")
+        const expense = parseInt(textAmount,10)
+        console.log(expense)
+        totalAmount = totalAmount + expense
+        }
        const element = document.querySelector("btn")
-       element
+       element.addEventListener("click",addExpensetotal)
        console.log(element)
     </script>
 
