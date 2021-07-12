@@ -16,15 +16,17 @@
     </style>
 </head>
 <body>
-    <script>
-        let incbtn=0;
-        const element=document.querySelector("btn")
-        element.addEventListener("click",ex)
-
-
-    </script>
-    
-
+   
     <button id="btn">+</button>
+
+    <script>
+        let counter=0;
+        function fnvar(){
+            counter=counter+1;
+            console.log(cpunter)
+        }
+        const element=document.querySelector("btn")
+        element.addEventListener("click",fnvar,false)
+    </script>
 </body>
 </html>
