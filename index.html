@@ -20,10 +20,20 @@
 </head>
 <body>
     <input id="inputAmount" type="text"></input>
-    <button id="btn">+</button>
+    <button id="btnAmount">+</button>
    
-    <script>
-        
+    <script> 
+    let totalExpense = 0
+   	function addExpenseToTotal(){
+    const inputElement = document.querySelector("#inputAmount")
+    const textAmount = inputElement.value
+    const expense = parseInt(textAmount, 10)
+	totalExpense = totalExpense + expense
+	console.log(totalExpense)
+    }
+    const element = document.querySelector("#btnAmount")
+    element.addEventListener('click',addExpenseToTotal)
+    
     </script>
 
 
