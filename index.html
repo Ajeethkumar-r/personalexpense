@@ -23,17 +23,17 @@
     <button id="btnAmount">+</button>
    
     <script> 
-    let totalExpense = 0
-   	function addExpenseToTotal(){
-    const inputElement = document.querySelector("#inputAmount")
-    const textAmount = inputElement.value
-    const expense = parseInt(textAmount, 10)
-	console.log(expense)
-	totalExpense = totalExpense + expense
-	console.log(totalExpense)
-    }
-    const element = document.querySelector("#btnAmount")
-    element.addEventListener('click',addExpenseToTotal)
+		let totalExpense = 0
+		function addExpenseToTotal(){
+		const inputElement = document.querySelector("#inputAmount")
+		const textAmount = inputElement.value
+		const expense = parseInt(textAmount, 10)
+		console.log(expense)
+		totalExpense = totalExpense + expense
+		console.log(totalExpense)
+		}
+		const element = document.querySelector("#btnAmount")
+		element.addEventListener('click',addExpenseToTotal)
     
     </script>
 
