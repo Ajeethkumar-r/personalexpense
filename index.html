@@ -15,20 +15,17 @@
         }
 
     </style>
+
+    <script>
+        let counter =0
+        counter = counter+1;
+       const element = document.querySelector("#btncounter")
+    </script>
 </head>
 <body>
    
-    <button id="btn">+</button>
+    <button id="btncounter">+</button>
 
-    <script>
-        let counter = 0;
-        function counterIncreament()
-        {
-            counter = counter + 1;
-            console.log(counter);
-        }
-       const element = document.querySelector("btn")
-       element.addEventListener("click",counterIncreament)
-    </script>
+    
 </body>
 </html>
